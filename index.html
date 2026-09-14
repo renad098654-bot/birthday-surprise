@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>HAPPY BIRTHDAY ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
+:root{--lav:#cdb7e8;--lav2:#eadff5;--deep:#8664aa;--ink:#624c76;--paper:#fffdfd}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:Cairo,Arial,sans-serif;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;z-index:-1;width:150px;height:100%;top:0;opacity:.55;pointer-events:none;background:
+radial-gradient(circle at 35% 12%,#d8c3ef 0 19px,transparent 20px),
+radial-gradient(circle at 75% 25%,#eadcf7 0 13px,transparent 14px),
+radial-gradient(circle at 25% 48%,#d9c4ef 0 16px,transparent 17px),
+radial-gradient(circle at 78% 73%,#eadcf7 0 20px,transparent 21px),
+radial-gradient(circle at 35% 91%,#d7c0ee 0 12px,transparent 13px)}body:before{left:0}body:after{right:0;transform:scaleX(-1)}
+main{max-width:1050px;margin:auto;padding:22px 16px 70px}
+.hero{text-align:center;padding:38px 12px 28px;border-bottom:1px solid #eee4f4}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(42px,9vw,76px);font-weight:500;letter-spacing:2px;margin:10px 0;color:#9676b4}
+.hero p{font-size:28px;margin:0;color:#b79ace}.heart{font-size:22px}
+.layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}
+.card,.last-card{background:rgba(255,253,253,.94);border:1px solid #eadff0;border-radius:18px;box-shadow:0 7px 24px rgba(125,91,151,.09);padding:22px;text-align:center}
+.card h2{font-family:"Playfair Display",serif;font-weight:500;margin:0 0 5px;color:#83639e;font-size:25px}
+.card h2:after{content:" ♡";font-family:Cairo;font-size:16px}
+.divider{width:110px;height:1px;background:#d5c4df;margin:10px auto 18px}
+.card p{line-height:2;font-size:15px}
+.gift{width:150px;height:125px;margin:18px auto;position:relative;cursor:pointer;touch-action:manipulation;transition:transform .2s}
+.gift:hover{transform:translateY(-3px)}.box{position:absolute;left:18px;right:18px;bottom:10px;height:78px;background:linear-gradient(90deg,#d9c4ed,#efe5f6,#d2b9e8);border:1px solid #c5aadd;border-radius:4px;box-shadow:0 8px 15px #cdb8df66}
+.lid{position:absolute;left:10px;right:10px;top:25px;height:25px;background:#d0b6e7;border:1px solid #bea1d4;border-radius:4px;z-index:3;transition:.55s}
+.ribbon-v{position:absolute;top:25px;bottom:10px;width:20px;left:50%;transform:translateX(-50%);background:#bea0d8aa;z-index:4}.ribbon-h{position:absolute;left:10px;right:10px;top:25px;height:12px;background:#c5a5dc;z-index:4}
+.bow{position:absolute;top:5px;left:50%;transform:translateX(-50%);z-index:5;font-size:38px;color:#ad88ca}
+.gift.open1 .lid{transform:translateY(-18px) rotate(-3deg)}.gift.open2 .lid{transform:translateY(-42px) rotate(-7deg);opacity:.25}.gift.open2 .box{animation:pop .45s ease}
+@keyframes pop{50%{transform:scale(1.05)}}
+button{border:1px solid #cdb6df;background:#eee5f5;color:#72528f;font:600 15px Cairo;border-radius:12px;padding:11px 20px;min-height:46px;cursor:pointer;touch-action:manipulation}
+button:hover{background:#e5d8ee}.hidden{display:none!important}.message{margin-top:15px;padding:17px 18px;background:#fff;border:1px solid #e5d8ec;border-radius:14px;line-height:2.15;box-shadow:0 5px 16px #9b76b51a}
+.full{grid-column:1/-1}.last-wrap{text-align:center;margin-top:26px}.big-gift{width:min(330px,85vw);height:235px;margin:20px auto 10px}.big-gift .box{height:145px;left:15px;right:15px;bottom:15px}.big-gift .lid{height:42px;top:48px;left:5px;right:5px}.big-gift .ribbon-v{top:48px;bottom:15px;width:38px}.big-gift .ribbon-h{top:48px;height:20px;left:5px;right:5px}.big-gift .bow{font-size:64px;top:-5px}
+.codebox{max-width:420px;margin:18px auto;padding:22px;border:1px solid #e4d7ec;border-radius:18px;background:#fff}
+input{width:100%;padding:13px 15px;border:1px solid #cdbbd9;border-radius:12px;font:16px Cairo;text-align:center;outline:none}input:focus{border-color:#9e7bb9}.wrong{color:#b35d73;margin:10px 0 0}
+.confetti{position:fixed;top:-20px;font-size:20px;z-index:20;animation:fall 3.2s linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:.2}}
+.end{text-align:center;padding:70px 15px 20px}.end h2{font-family:"Playfair Display",serif;font-size:48px;color:#9b78b8;font-weight:500}
+@media(max-width:650px){main{padding:12px 11px 55px}.layout{grid-template-columns:1fr;gap:14px}.hero{padding:30px 5px 22px}.hero h1{font-size:43px}.hero p{font-size:22px}.card{padding:18px 14px}.card p{font-size:14px}.full{grid-column:auto}.big-gift{transform:scale(.9);margin-top:4px}.end h2{font-size:40px}}
+</style>
+</head>
+<body>
+<main>
+<section class="hero"><h1>HAPPY<br>BIRTHDAY</h1><p>♡</p></section>
+
+<section class="layout">
+  <article class="card" id="g1">
+    <h2>GIFT 01</h2><div class="divider"></div>
+    <p>سوال: وش أول شيء أتذكره فيك ؟</p>
+    <button onclick="openGift(1)">افتح الهدية ✦</button>
+    <div class="gift hidden" id="gift1" onclick="stepGift(1)"><div class="bow">⌁</div><div class="lid"></div><div class="ribbon-h"></div><div class="ribbon-v"></div><div class="box"></div></div>
+    <div class="message hidden" id="msg1">أول رسالة بيننا ماكانت رسالة حب و غرام كانت عبارة عن تهديد مني لك</div>
+  </article>
+
+  <article class="card" id="g2">
+    <h2>GIFT 02</h2><div class="divider"></div>
+    <p>تذكر أول رسالة بيننا ؟</p>
+    <button onclick="openGift(2)">أتذكرها ✦</button>
+    <div class="gift hidden" id="gift2" onclick="stepGift(2)"><div class="bow">⌁</div><div class="lid"></div><div class="ribbon-h"></div><div class="ribbon-v"></div><div class="box"></div></div>
+    <div class="message hidden" id="msg2">تحسب خلصنا ؟ لسا يزوجي باقي وراك مشوار كبير تذكر اول شيء صار بيننا ؟ كنت اهددك ومافحياتي توقعت اني رح اطيح في حب الشخص اللي هددتو و كان افضل قرار سويتو فحياتي اني حبيتك و اليوم اعبرلك عن مشاعري في عيدميلادك</div>
+  </article>
+
+  <article class="card" id="g3">
+    <h2>GIFT 03</h2><div class="divider"></div>
+    <p>هدية صغيرة لك ✦</p>
+    <button onclick="openGift(3)">افتح الهدية</button>
+    <div class="gift hidden" id="gift3" onclick="stepGift(3)"><div class="bow">⌁</div><div class="lid"></div><div class="ribbon-h"></div><div class="ribbon-v"></div><div class="box"></div></div>
+    <div class="message hidden" id="msg3">دايم الحياة تعطي الناس نعم بس الفرق النعم تكون هيئتها مختلفة وانا نعمتي من هالدنيا هو انت و وجودك في حياتي من اعظم الاشياء و احبها لقلبي انت فكل عام وانت حبي وكل عام وانت تنورني</div>
+  </article>
+
+  <article class="card" id="g4">
+    <h2>GIFT 04</h2><div class="divider"></div>
+    <p>هذه هدية خاصة لك ♡</p>
+    <div class="gift" id="gift4" onclick="stepGift(4)"><div class="bow">⌁</div><div class="lid"></div><div class="ribbon-h"></div><div class="ribbon-v"></div><div class="box"></div></div>
+    <div class="message hidden" id="msg4">كل عام وأنت بخير يا من أهدى لروحي معنى الحب يوم ميلادك بالنسبة لي مو مجرد تاريخ هو اليوم اللي بدأ فيه الكون يضيء بحضورك رغم المسافة اللي تفصلنا، إلا أن قلبي ما عرف البعد يوم يظل ملاصق لك يهمس باسمك، ويدعي و لك اتمنى من الله أن يجعل عامك هذا مليئا بالفرح وأن يكتب لك فيه ما تتمنى وأكثر. كل عام وأنت حبيبي القريب من قلبي، ولو كنت بعيد عن عيني</div>
+  </article>
+
+  <article class="card full last-wrap" id="g5">
+    <h2>GIFT 05</h2><div class="divider"></div>
+    <p>الهدية الأخيرة ♡</p>
+    <div class="gift big-gift" id="gift5" onclick="showCode()"><div class="bow">⌁</div><div class="lid"></div><div class="ribbon-h"></div><div class="ribbon-v"></div><div class="box"></div><div style="position:absolute;z-index:7;left:50%;top:92px;transform:translateX(-50%);font-size:32px">🔒</div></div>
+    <div class="codebox hidden" id="codebox">
+      <h3>ENTER THE CODE</h3><input id="code" inputmode="numeric" maxlength="4" placeholder="Enter code..." onkeydown="if(event.key==='Enter')checkCode()">
+      <br><br><button onclick="checkCode()">تأكيد</button><div class="wrong hidden" id="wrong">Wrong code :(</div>
+    </div>
+    <div class="message hidden" id="finalmsg">يمكن دي آخر هدية بس هي اكتر هدية كنت ابي اوصلها لك لان مهما كتبت ومهما حاولت اوصف لك حبي لك و مكانتك عندي الكلام دايم يقصر عن اللي فقلبي لك ماكنت ادري ان شخص دخل حياتي بطريقة ما كنت اتوقعها ابداً يصير بعدها جزء من ايامي وتفاصيل حياتي و دنيتي تدري اني احب وجودك معايا احب تفاصيلك احب سوالفنا حتى احب الاشياء الصغيرة اللي يمكن انت ما تنتبه لها بس انا حافظتها فقلبي واليوم صار ميلادك ما اتمنى لك بس سنة حلوة اتمنى لك عمر مليان سعادة و راحة وحب واتمنى تكون محقق كل شيء تتمناه وتبيه اتمنى اكون من هالاشخاص اللي يشاركونك هالايام الحلوة فحياتك و المُره بعد الله لايجيبها لحياتك بس حتى لو ظهرت ايام مُره تذكر اني موجودة جنبك في كل خطوة احبك اححبكك رغم المسافة اللي بيننا و المشاكل بس دايم احس حبي لك يزيد ماينقص ولا يقل و كنت احس انك دايم قريب لقلبي مو بعيد اتمنى مهما عدت الايام و مشت نبقى مع بعض و يبقى مكاني فقلبك و مكانك فقلبي مايتغير مع مرور الزمن كل عام وانتت حبيبيي و دنيتيي كل عامم وانا محظوظه فيك اكترر من قبل<br><br>عيد ميلاد سعيد يا حبوبي .<br>من حبوبتك</div>
+  </article>
+</section>
+
+<section class="end hidden" id="ending">
+  <button onclick="celebrate()">اضغط هنا ✦</button>
+  <p>لبدأ الاحتفال الأخير ♡</p>
+  <h2 class="hidden" id="theend">THE END ♡</h2>
+</section>
+</main>
+<script>
+const steps={1:0,2:0,3:0,4:0};
+const messages={1:'msg1',2:'msg2',3:'msg3',4:'msg4'};
+function openGift(n){document.getElementById('gift'+n).classList.remove('hidden');document.getElementById('gift'+n).scrollIntoView({behavior:'smooth',block:'center'})}
+function stepGift(n){
+ steps[n]++;
+ const el=document.getElementById('gift'+n);
+ if(steps[n]===1) el.classList.add('open1');
+ if(steps[n]===2){el.classList.add('open2');document.getElementById(messages[n]).classList.remove('hidden')}
+}
+function showCode(){document.getElementById('codebox').classList.remove('hidden');document.getElementById('code').focus()}
+function checkCode(){
+ const input=document.getElementById('code').value;
+ const wrong=document.getElementById('wrong');
+ if(input!=='1214'){wrong.classList.remove('hidden');return}
+ wrong.classList.add('hidden');
+ const g=document.getElementById('gift5');g.classList.add('open1');setTimeout(()=>g.classList.add('open2'),450);
+ confetti(28);
+ setTimeout(()=>{document.getElementById('finalmsg').classList.remove('hidden');document.getElementById('ending').classList.remove('hidden');document.getElementById('ending').scrollIntoView({behavior:'smooth',block:'center'})},900);
+}
+function confetti(count=20){
+ const chars=['✦','♡','✧','•'];
+ for(let i=0;i<count;i++){const s=document.createElement('span');s.className='confetti';s.textContent=chars[Math.floor(Math.random()*chars.length)];s.style.left=Math.random()*100+'vw';s.style.animationDelay=Math.random()*.7+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),4000)}
+}
+function celebrate(){confetti(45);document.getElementById('theend').classList.remove('hidden');document.getElementById('theend').scrollIntoView({behavior:'smooth',block:'center'})}
+</script>
+</body>
+</html>
